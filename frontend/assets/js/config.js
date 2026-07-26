@@ -23,8 +23,10 @@ const VELORASEC_CONFIG = Object.freeze({
   // ----------------------------------------------------------
   // Development : 'http://localhost:5000'
   // Staging     : 'https://staging-api.velorasec.io'
-  // Production  : 'https://api.velorasec.io'
-  API_BASE_URL: 'http://localhost:5000',
+  // Production  : window.location.origin
+  API_BASE_URL: window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" 
+      ? "http://localhost:5000" 
+      : window.location.origin,
 
   // ----------------------------------------------------------
   // Demo Mode
