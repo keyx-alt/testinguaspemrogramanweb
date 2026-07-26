@@ -1,0 +1,10 @@
+# — placeholder: backend/routes/ —
+# Folder ini akan berisi Flask Blueprint route handlers.
+# Dikembangkan pada Phase 7 (Backend Flask) dan Phase 9 (Authentication).
+#
+# Rencana file:
+#   auth.py         → /api/auth/login, /register, /refresh, /logout
+#   users.py        → /api/users/me (GET, PUT)
+#   progress.py     → /api/progress (GET, POST, DELETE)
+#   quiz.py         → /api/quiz/results (GET, POST)
+#   planner.py      → /api/planner (GET, POST, DELETE)

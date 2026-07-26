@@ -1,0 +1,9 @@
+# — placeholder: backend/models/ —
+# Folder ini akan berisi SQLAlchemy database models.
+# Dikembangkan pada Phase 7 (Backend Flask) dan Phase 8 (Database MySQL).
+#
+# Rencana file:
+#   user.py         → model User (id, username, email, password_hash, created_at)
+#   progress.py     → model UserProgress (user_id, module_id, completed, completed_at)
+#   quiz_result.py  → model QuizResult (user_id, category, score, total, timestamp)
+#   planner.py      → model PlannerTask (user_id, task_key, is_done, updated_at)

@@ -1,0 +1,9 @@
+# — placeholder: backend/utils/ —
+# Folder ini akan berisi helper functions dan decorator yang digunakan
+# di seluruh codebase backend.
+#
+# Rencana file:
+#   decorators.py    → @token_required, @admin_required
+#   validators.py    → input validation helpers (email, password strength, dll.)
+#   responses.py     → helper untuk format JSON response yang konsisten
+#   errors.py        → custom exception classes & error handlers

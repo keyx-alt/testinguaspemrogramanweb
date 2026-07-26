@@ -1,0 +1,9 @@
+# — placeholder: backend/services/ —
+# Folder ini akan berisi business logic yang terpisah dari route handlers.
+# Prinsip: routes hanya menerima request & mengirim response;
+#          semua logika bisnis ada di services.
+#
+# Rencana file:
+#   auth_service.py      → registrasi, login, JWT generate/verify, logout blacklist
+#   user_service.py      → operasi CRUD user, validasi profil
+#   progress_service.py  → kalkulasi progress, update streak, XP system
