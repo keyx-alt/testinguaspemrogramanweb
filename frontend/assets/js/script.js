@@ -270,7 +270,7 @@ const LABS = [
 
 const TOOLS = {
   "Networking": [
-    { name: "Wireshark", func: "Network packet capture & analysis", diff: 2, use: "Analisis traffic, debugging protokol, deteksi intrusi", pros: "GUI-based, filter canggih, dissector protokol lengkap", cons: "Bisa overwhelming karena volume data", url: "https://wireshark.org", url1: "pages/Wireshark/wireshark-guide.html" },
+    { name: "Wireshark", func: "Network packet capture & analysis", diff: 2, use: "Analisis traffic, debugging protokol, deteksi intrusi", pros: "GUI-based, filter canggih, dissector protokol lengkap", cons: "Bisa overwhelming karena volume data", url: "https://wireshark.org", url1: "guides/Wireshark/wireshark-guide.html" },
     { name: "Nmap", func: "Network discovery & security auditing", diff: 2, use: "Port scanning, OS detection, enumerasi service", pros: "Standar industri, NSE scripts, sangat versatile", cons: "Bisa trigger IDS alert jika tidak hati-hati", url: "https://nmap.org", url1: "pages/Nmap/nmap-ethical-guide.html" },
     { name: "tcpdump", func: "Command-line packet capture", diff: 3, use: "Headless server, scripting, quick capture", pros: "Ringan, scriptable, tersedia hampir di semua sistem", cons: "Tidak ada GUI, learning curve cukup tinggi", url: "https://tcpdump.org", url1: "pages/Tcpdump/tcpdump-guide.html" }
   ],
