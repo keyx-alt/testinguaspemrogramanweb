@@ -271,24 +271,24 @@ const LABS = [
 const TOOLS = {
   "Networking": [
     { name: "Wireshark", func: "Network packet capture & analysis", diff: 2, use: "Analisis traffic, debugging protokol, deteksi intrusi", pros: "GUI-based, filter canggih, dissector protokol lengkap", cons: "Bisa overwhelming karena volume data", url: "https://wireshark.org", url1: "guides/Wireshark/wireshark-guide.html" },
-    { name: "Nmap", func: "Network discovery & security auditing", diff: 2, use: "Port scanning, OS detection, enumerasi service", pros: "Standar industri, NSE scripts, sangat versatile", cons: "Bisa trigger IDS alert jika tidak hati-hati", url: "https://nmap.org", url1: "pages/Nmap/nmap-ethical-guide.html" },
-    { name: "tcpdump", func: "Command-line packet capture", diff: 3, use: "Headless server, scripting, quick capture", pros: "Ringan, scriptable, tersedia hampir di semua sistem", cons: "Tidak ada GUI, learning curve cukup tinggi", url: "https://tcpdump.org", url1: "pages/Tcpdump/tcpdump-guide.html" }
+    { name: "Nmap", func: "Network discovery & security auditing", diff: 2, use: "Port scanning, OS detection, enumerasi service", pros: "Standar industri, NSE scripts, sangat versatile", cons: "Bisa trigger IDS alert jika tidak hati-hati", url: "https://nmap.org", url1: "guides/Nmap/nmap-ethical-guide.html" },
+    { name: "tcpdump", func: "Command-line packet capture", diff: 3, use: "Headless server, scripting, quick capture", pros: "Ringan, scriptable, tersedia hampir di semua sistem", cons: "Tidak ada GUI, learning curve cukup tinggi", url: "https://tcpdump.org", url1: "guides/Tcpdump/tcpdump-guide.html" }
   ],
   "Web Security": [
     { name: "Burp Suite", func: "Web application security testing proxy", diff: 3, use: "Intercept HTTP, fuzzing, testing SQLi/XSS", pros: "Standar industri untuk web pentest, scanner canggih", cons: "Versi Pro mahal ($449/yr), UI kompleks untuk pemula", url: "https://portswigger.net/burp", url1: "pages/coming-soon.html" },
-    { name: "OWASP ZAP", func: "Open-source web application scanner", diff: 2, use: "Automated scanning, spidering, analisis pasif", pros: "Gratis, dikembangkan aktif, bagus untuk pemula", cons: "Lebih banyak false positives vs Burp Pro", url: "https://zaproxy.org", url1: "pages/OwaspZap/owasp-zap-guide.html" }
+    { name: "OWASP ZAP", func: "Open-source web application scanner", diff: 2, use: "Automated scanning, spidering, analisis pasif", pros: "Gratis, dikembangkan aktif, bagus untuk pemula", cons: "Lebih banyak false positives vs Burp Pro", url: "https://zaproxy.org", url1: "guides/OwaspZap/owasp-zap-guide.html" }
   ],
   "Forensics": [
-    { name: "Autopsy", func: "Digital forensics investigation platform", diff: 3, use: "Analisis disk, recovery file, pembuatan timeline", pros: "Gratis, GUI-based, extensible via plugin", cons: "Bisa lambat di image disk yang besar", url: "https://sleuthkit.org/autopsy", url1: "pages/coming-soon.html" },
-    { name: "Volatility3", func: "Memory forensics framework", diff: 4, use: "Analisis dump RAM untuk malware dan artifact", pros: "Gold standard memory forensics, aktif dikembangkan", cons: "CLI-only, memerlukan pengetahuan Python", url: "https://volatilityfoundation.org", url1: "pages/coming-soon.html" }
+    { name: "Autopsy", func: "Digital forensics investigation platform", diff: 3, use: "Analisis disk, recovery file, pembuatan timeline", pros: "Gratis, GUI-based, extensible via plugin", cons: "Bisa lambat di image disk yang besar", url: "https://sleuthkit.org/autopsy", url1: "misc/coming-soon.html" },
+    { name: "Volatility3", func: "Memory forensics framework", diff: 4, use: "Analisis dump RAM untuk malware dan artifact", pros: "Gold standard memory forensics, aktif dikembangkan", cons: "CLI-only, memerlukan pengetahuan Python", url: "https://volatilityfoundation.org", url1: "misc/coming-soon.html" }
   ],
   "Reverse Engineering": [
-    { name: "Ghidra", func: "Software reverse engineering framework (NSA)", diff: 4, use: "Disassembly, decompilation, analisis malware", pros: "Gratis, powerful, fitur kolaborasi tim", cons: "Berbasis Java (agak lambat), learning curve tinggi", url: "https://ghidra-sre.org", url1: "pages/Ghidra/ghidra-reference-guide.html" },
-    { name: "x64dbg", func: "Open-source Windows debugger", diff: 4, use: "Dynamic analysis, debugging malware, unpacking", pros: "Gratis, ekosistem plugin luas, aktif dikembangkan", cons: "Windows-only, kompleks untuk pemula", url: "https://x64dbg.com", url1: "pages/coming-soon.html" }
+    { name: "Ghidra", func: "Software reverse engineering framework (NSA)", diff: 4, use: "Disassembly, decompilation, analisis malware", pros: "Gratis, powerful, fitur kolaborasi tim", cons: "Berbasis Java (agak lambat), learning curve tinggi", url: "https://ghidra-sre.org", url1: "guides/Ghidra/ghidra-reference-guide.html" },
+    { name: "x64dbg", func: "Open-source Windows debugger", diff: 4, use: "Dynamic analysis, debugging malware, unpacking", pros: "Gratis, ekosistem plugin luas, aktif dikembangkan", cons: "Windows-only, kompleks untuk pemula", url: "https://x64dbg.com", url1: "misc/coming-soon.html" }
   ],
   "Lab Environments": [
-    { name: "Kali Linux", func: "Penetration testing distribution", diff: 2, use: "600+ pre-installed security tools", pros: "Standar industri, komunitas besar, tool selalu update", cons: "Disalahgunakan script kiddies tanpa pemahaman dasar", url: "https://kali.org", url1: "pages/coming-soon.html" },
-    { name: "VirtualBox", func: "Free virtualization platform", diff: 1, use: "Menjalankan lab environment yang terisolasi", pros: "Gratis, cross-platform, fitur snapshot berguna", cons: "Overhead performa, fitur lebih sedikit dari VMware Pro", url: "https://virtualbox.org", url1: "pages/coming-soon.html" }
+    { name: "Kali Linux", func: "Penetration testing distribution", diff: 2, use: "600+ pre-installed security tools", pros: "Standar industri, komunitas besar, tool selalu update", cons: "Disalahgunakan script kiddies tanpa pemahaman dasar", url: "https://kali.org", url1: "misc/coming-soon.html" },
+    { name: "VirtualBox", func: "Free virtualization platform", diff: 1, use: "Menjalankan lab environment yang terisolasi", pros: "Gratis, cross-platform, fitur snapshot berguna", cons: "Overhead performa, fitur lebih sedikit dari VMware Pro", url: "https://virtualbox.org", url1: "misc/coming-soon.html" }
   ]
 };
 
